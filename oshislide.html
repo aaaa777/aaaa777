@@ -1,0 +1,51 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+<script type="text/javascript">
+        $(document).ready(function(){
+            $('.slider').bxSlider({
+                auto: true,
+                pause: 5000,
+            });
+        });
+</script>
+
+</head>
+<body>
+    <div class="slider" width="375px" height="667px">
+<img src="res/img/1.gif" alt="">
+<img src="res/img/2.gif" alt="">
+<img src="res/img/3.gif" alt="">
+<img src="res/img/4.gif" alt="">
+</div>
+</body>
+</html>
+
+<style>
+* {
+    margin: 0;
+}
+body {
+    overflow: hidden;
+}
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.bx-wrapper {
+    border: 0;
+    margin: 0;
+}
+.bx-next .bx-prev {
+    opacity: 0.2;
+    scale: 2;
+}
+.bx-pager {
+    margin: 0;
+    /* visibility: hidden; */
+}
+</style>
